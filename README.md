@@ -1,34 +1,11 @@
-## Welcome to GitHub Pages
+## Welcome to my portfolio!
 
-You can use the [editor on GitHub](https://github.com/brittneyho/brittneyho.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+### A bit about me
 
-Hi there, I'm putting in some new web content!
+I'm Brittney Ho, a senior at the George Washington University's School of Media and Public Affairs, majoring in Journalism and Mass Communication with a minor in Communication.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I've spent the past four years studying the dynamic field of journalism in our nation's capital, which has given me a lot of real-world experience in research and reporting. Below, you'll find some of my projects from an advanced course, Reporting in the Digital Age, where we worked with real raw data to identify patterns and code original analyses. 
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
 
