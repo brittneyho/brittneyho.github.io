@@ -11,13 +11,13 @@ For some of my other original work, check out my [production portfolio](https://
 
 ### Impeachment analysis
 
-In October 2020, we looked at some raw data involving House Democrats' stances and behaviors regarding President Trump's impeachment. We used demographic information about their respective districts to try and find some patterns among the representatives. The analysis looked at this data from a number of different angles— an exercise in R functionality.
+In October 2020, we looked at some raw data involving House Democrats' stances and behaviors regarding President Trump's impeachment. We used demographic information about their respective districts to try and find some patterns among the representatives. 
 
-Click [here](https://brittneyho.github.io/Impeachment%20Analysis/) to take a look at the code and results.
+Click [here](https://brittneyho.github.io/Impeachment%20Analysis/) for the code and results.
 
 ### Biden Transition Analysis 
 
-In the weeks following Joe Biden's 2020 election, announcements of new White House staff members and agency appointees dropped every day. We scraped data directly from Biden's [website](https://buildbackbetter.gov/nominees-and-appointees/) website and used R to analyze some of those changes over time.
+In the weeks following Joe Biden's 2020 election, announcements of new White House staff members and agency appointees dropped every day. We scraped data directly from Biden's [website](https://buildbackbetter.gov/nominees-and-appointees/) and used R to analyze some of those changes over time.
 
 Take a look at those results [here](https://brittneyho.github.io/Biden%20Transition/).
 
