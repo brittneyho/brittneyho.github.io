@@ -6,11 +6,19 @@ I'm Brittney Ho, a senior at the George Washington University's School of Media 
 
 I've spent the past four years studying the dynamic field of journalism in our nation's capital, which has given me a lot of real-world experience in research and reporting. Below, you'll find some of my projects from an advanced course, Reporting in the Digital Age, where we worked with real raw data to identify patterns and code original analyses. 
 
+For some of my other original work, check out my [personal portfolio](https://brittneyho.wixsite.com/portfolio)!
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/brittneyho/brittneyho.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Impeachment Analysis
 
-### Support or Contact
+In October 2020, we looked at some raw data involving House Democrats' stances and behaviors regarding President Trump's impeachment. We used demographic information about their respective districts to try and find some patterns among the representatives. The analysis looked at this data from a number of different angles— an exercise in R functionality.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Click [here](https://brittneyho.github.io/Impeachment%20Analysis/) to take a look at the code and results.
+
+### Biden Transition Analysis 
+
+TKTK
+
+### Biden Transition Analysis (FlexDash)
+
+TKTK
