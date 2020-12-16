@@ -15,12 +15,12 @@ In October 2020, we looked at some raw data involving House Democrats' stances a
 
 Click [here](https://brittneyho.github.io/Impeachment%20Analysis/) for the code and results.
 
-### Biden Transition Analysis 
+### Biden transition analysis 
 
 In the weeks following Joe Biden's 2020 election, announcements of new White House staff members and agency appointees dropped every day. We scraped data directly from Biden's [website](https://buildbackbetter.gov/nominees-and-appointees/) and used R to analyze some of those changes over time.
 
 Take a look at those results [here](https://brittneyho.github.io/Biden%20Transition/).
 
-### Biden Transition Analysis (FlexDash)
+### Biden transition tracker
 
 TKTK
