@@ -23,4 +23,6 @@ Take a look at those results [here](https://brittneyho.github.io/Biden%20Transit
 
 ### Biden transition tracker
 
-TKTK
+Finally, we relied on Flex Dashboard to produce a more readable, interactive way to read the data. On this page, you'll be able to see the White House Senior Staff and Agency Review Team members listed in charts that you can sort, filter, and search. You'll also find a tab where I've tracked the growth of each Agency Review Team from November to December, organized by percent change, perhaps reflective of areas of prioritized importance to the incoming administration. 
+
+See [here](https://brittneyho.github.io/Biden%20Transition%20Tracker/) for the results!
