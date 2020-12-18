@@ -379,16 +379,11 @@ summary {
 </div>
 
 
-<pre class="r"><code># FOR EACH OF THE QUESTIONS BELOW, WRITE YOUR WORKING R CODE TO RETURN THE REQUESTED RESULTS
-# USE COMMENTS (PREFACED BY THE #) BEFORE THE WORKING CODE TO EXPLAIN WHAT YOU&#39;RE DOING FOR EACH STEP
-
-
-# 1) The column &quot;for_impeachment&quot; indicates whether the member has publicly called for
-# an impeachment inquiry. Filter to return only the ones where the answer is NO.    
-
-#Explanation: I&#39;m filtering the &quot;impeach&quot; data set by those who have the value &quot;NO&quot; in the &quot;for_impeachment&quot; column
-
-impeach %&gt;% 
+<div id="members-against-impeachment" class="section level3">
+<h3>Members against impeachment</h3>
+<p>The column “for_impeachment” indicates whether the member has publicly called for an impeachment inquiry. Filter to return only the ones where the answer is NO.</p>
+<p><em>Explanation</em>: I’m filtering the “impeach” data set by those who have the value “NO” in the “for_impeachment” column</p>
+<pre class="r"><code>impeach %&gt;% 
   filter(for_impeachment == &quot;NO&quot;) %&gt;%
   gt() %&gt;%
   tab_header(
@@ -398,7 +393,7 @@ impeach %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#kpentxpiqv .gt_table {
+#wqgakdxafz .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -423,7 +418,7 @@ impeach %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#kpentxpiqv .gt_heading {
+#wqgakdxafz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -435,7 +430,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#kpentxpiqv .gt_title {
+#wqgakdxafz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -445,7 +440,7 @@ impeach %&gt;%
   border-bottom-width: 0;
 }
 
-#kpentxpiqv .gt_subtitle {
+#wqgakdxafz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -455,13 +450,13 @@ impeach %&gt;%
   border-top-width: 0;
 }
 
-#kpentxpiqv .gt_bottom_border {
+#wqgakdxafz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kpentxpiqv .gt_col_headings {
+#wqgakdxafz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -476,7 +471,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#kpentxpiqv .gt_col_heading {
+#wqgakdxafz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -496,7 +491,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#kpentxpiqv .gt_column_spanner_outer {
+#wqgakdxafz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -508,15 +503,15 @@ impeach %&gt;%
   padding-right: 4px;
 }
 
-#kpentxpiqv .gt_column_spanner_outer:first-child {
+#wqgakdxafz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kpentxpiqv .gt_column_spanner_outer:last-child {
+#wqgakdxafz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kpentxpiqv .gt_column_spanner {
+#wqgakdxafz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -528,7 +523,7 @@ impeach %&gt;%
   width: 100%;
 }
 
-#kpentxpiqv .gt_group_heading {
+#wqgakdxafz .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -550,7 +545,7 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#kpentxpiqv .gt_empty_group_heading {
+#wqgakdxafz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -565,15 +560,15 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#kpentxpiqv .gt_from_md > :first-child {
+#wqgakdxafz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kpentxpiqv .gt_from_md > :last-child {
+#wqgakdxafz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kpentxpiqv .gt_row {
+#wqgakdxafz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -592,7 +587,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#kpentxpiqv .gt_stub {
+#wqgakdxafz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -604,7 +599,7 @@ impeach %&gt;%
   padding-left: 12px;
 }
 
-#kpentxpiqv .gt_summary_row {
+#wqgakdxafz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -614,7 +609,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#kpentxpiqv .gt_first_summary_row {
+#wqgakdxafz .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -624,7 +619,7 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#kpentxpiqv .gt_grand_summary_row {
+#wqgakdxafz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -634,7 +629,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#kpentxpiqv .gt_first_grand_summary_row {
+#wqgakdxafz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -644,11 +639,11 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#kpentxpiqv .gt_striped {
+#wqgakdxafz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kpentxpiqv .gt_table_body {
+#wqgakdxafz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -657,7 +652,7 @@ impeach %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#kpentxpiqv .gt_footnotes {
+#wqgakdxafz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -671,13 +666,13 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#kpentxpiqv .gt_footnote {
+#wqgakdxafz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#kpentxpiqv .gt_sourcenotes {
+#wqgakdxafz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -691,46 +686,46 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#kpentxpiqv .gt_sourcenote {
+#wqgakdxafz .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#kpentxpiqv .gt_left {
+#wqgakdxafz .gt_left {
   text-align: left;
 }
 
-#kpentxpiqv .gt_center {
+#wqgakdxafz .gt_center {
   text-align: center;
 }
 
-#kpentxpiqv .gt_right {
+#wqgakdxafz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kpentxpiqv .gt_font_normal {
+#wqgakdxafz .gt_font_normal {
   font-weight: normal;
 }
 
-#kpentxpiqv .gt_font_bold {
+#wqgakdxafz .gt_font_bold {
   font-weight: bold;
 }
 
-#kpentxpiqv .gt_font_italic {
+#wqgakdxafz .gt_font_italic {
   font-style: italic;
 }
 
-#kpentxpiqv .gt_super {
+#wqgakdxafz .gt_super {
   font-size: 65%;
 }
 
-#kpentxpiqv .gt_footnote_marks {
+#wqgakdxafz .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="kpentxpiqv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="wqgakdxafz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="32" class="gt_heading gt_title gt_font_normal" style>Who Has Not Publicly Called for an Impeachment Inquiry</th>
@@ -1664,13 +1659,12 @@ impeach %&gt;%
   
   
 </table></div>
-<pre class="r"><code># 2) Filter to return only results where a member is both against impeachment, and comes from a 
-# district that President Trump won in 2016 (which is noted in the &quot;p16winningparty&quot; column)
-
-#Explanation: Similarly to above, I&#39;m filtering the data by those who have the value &quot;NO&quot; in the &quot;for_impeachment&quot; column. 
-#I also added in a filter for those who have the value &quot;R&quot; in the &quot;p16winningparty&quot; column.
-
-impeach %&gt;% 
+</div>
+<div id="members-against-impeachment-who-come-from-a-district-that-trump-won-in-2016" class="section level3">
+<h3>Members against impeachment &amp; who come from a district that Trump won in 2016</h3>
+<p>Filter to return only results where a member is both against impeachment, and comes from a district that President Trump won in 2016 (which is noted in the “p16winningparty” column)</p>
+<p><em>Explanation</em>: Similarly to above, I’m filtering the data by those who have the value “NO” in the “for_impeachment” column. I also added in a filter for those who have the value “R” in the “p16winningparty” column.</p>
+<pre class="r"><code>impeach %&gt;% 
   filter(for_impeachment == &quot;NO&quot;,
          p16winningparty == &quot;R&quot;) %&gt;%
   gt() %&gt;%
@@ -1681,7 +1675,7 @@ impeach %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#onweoptgaa .gt_table {
+#heyypkblzq .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1706,7 +1700,7 @@ impeach %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#onweoptgaa .gt_heading {
+#heyypkblzq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1718,7 +1712,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#onweoptgaa .gt_title {
+#heyypkblzq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1728,7 +1722,7 @@ impeach %&gt;%
   border-bottom-width: 0;
 }
 
-#onweoptgaa .gt_subtitle {
+#heyypkblzq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1738,13 +1732,13 @@ impeach %&gt;%
   border-top-width: 0;
 }
 
-#onweoptgaa .gt_bottom_border {
+#heyypkblzq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#onweoptgaa .gt_col_headings {
+#heyypkblzq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1759,7 +1753,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#onweoptgaa .gt_col_heading {
+#heyypkblzq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1779,7 +1773,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#onweoptgaa .gt_column_spanner_outer {
+#heyypkblzq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1791,15 +1785,15 @@ impeach %&gt;%
   padding-right: 4px;
 }
 
-#onweoptgaa .gt_column_spanner_outer:first-child {
+#heyypkblzq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#onweoptgaa .gt_column_spanner_outer:last-child {
+#heyypkblzq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#onweoptgaa .gt_column_spanner {
+#heyypkblzq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1811,7 +1805,7 @@ impeach %&gt;%
   width: 100%;
 }
 
-#onweoptgaa .gt_group_heading {
+#heyypkblzq .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1833,7 +1827,7 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#onweoptgaa .gt_empty_group_heading {
+#heyypkblzq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1848,15 +1842,15 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#onweoptgaa .gt_from_md > :first-child {
+#heyypkblzq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#onweoptgaa .gt_from_md > :last-child {
+#heyypkblzq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#onweoptgaa .gt_row {
+#heyypkblzq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1875,7 +1869,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#onweoptgaa .gt_stub {
+#heyypkblzq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1887,7 +1881,7 @@ impeach %&gt;%
   padding-left: 12px;
 }
 
-#onweoptgaa .gt_summary_row {
+#heyypkblzq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1897,7 +1891,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#onweoptgaa .gt_first_summary_row {
+#heyypkblzq .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1907,7 +1901,7 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#onweoptgaa .gt_grand_summary_row {
+#heyypkblzq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1917,7 +1911,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#onweoptgaa .gt_first_grand_summary_row {
+#heyypkblzq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1927,11 +1921,11 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#onweoptgaa .gt_striped {
+#heyypkblzq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#onweoptgaa .gt_table_body {
+#heyypkblzq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1940,7 +1934,7 @@ impeach %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#onweoptgaa .gt_footnotes {
+#heyypkblzq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1954,13 +1948,13 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#onweoptgaa .gt_footnote {
+#heyypkblzq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#onweoptgaa .gt_sourcenotes {
+#heyypkblzq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1974,46 +1968,46 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#onweoptgaa .gt_sourcenote {
+#heyypkblzq .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#onweoptgaa .gt_left {
+#heyypkblzq .gt_left {
   text-align: left;
 }
 
-#onweoptgaa .gt_center {
+#heyypkblzq .gt_center {
   text-align: center;
 }
 
-#onweoptgaa .gt_right {
+#heyypkblzq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#onweoptgaa .gt_font_normal {
+#heyypkblzq .gt_font_normal {
   font-weight: normal;
 }
 
-#onweoptgaa .gt_font_bold {
+#heyypkblzq .gt_font_bold {
   font-weight: bold;
 }
 
-#onweoptgaa .gt_font_italic {
+#heyypkblzq .gt_font_italic {
   font-style: italic;
 }
 
-#onweoptgaa .gt_super {
+#heyypkblzq .gt_super {
   font-size: 65%;
 }
 
-#onweoptgaa .gt_footnote_marks {
+#heyypkblzq .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="onweoptgaa" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="heyypkblzq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="32" class="gt_heading gt_title gt_font_normal" style>Members Against Impeachment and Who Come From a District that Trump won in 2016</th>
@@ -2573,13 +2567,12 @@ impeach %&gt;%
   
   
 </table></div>
-<pre class="r"><code># 3) Filter for only results where a member is against impeachment, comes from a 
-# district that President Trump won in 2016 (which is noted in the &quot;p16winningparty&quot; column),
-# and also comes from a district that Mitt Romney won in 2012 (&quot;p12winningparty&quot;).
-
-#Explanation: Similar process to above two questions, but I added in one more filter for those who have the value &quot;R&quot; in the &quot;p12winningparty&quot; column. 
-
-impeach %&gt;% 
+</div>
+<div id="members-against-impeachment-come-from-a-district-that-trump-won-in-2016-and-that-romney-won-in-2012" class="section level3">
+<h3>Members against impeachment, come From a district that Trump won in 2016, and that Romney won in 2012</h3>
+<p>Filter for only results where a member is against impeachment, comes from a district that President Trump won in 2016 (which is noted in the “p16winningparty” column), and also comes from a district that Mitt Romney won in 2012 (“p12winningparty”).</p>
+<p><em>Explanation</em>: Similar process to above two questions, but I added in one more filter for those who have the value “R” in the “p12winningparty” column.</p>
+<pre class="r"><code>impeach %&gt;% 
   filter(for_impeachment == &quot;NO&quot;,
          p16winningparty == &quot;R&quot;,
          p12winningparty == &quot;R&quot;) %&gt;%
@@ -2591,7 +2584,7 @@ impeach %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#gsssrfbwrv .gt_table {
+#tkbcpysmps .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -2616,7 +2609,7 @@ impeach %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#gsssrfbwrv .gt_heading {
+#tkbcpysmps .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2628,7 +2621,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#gsssrfbwrv .gt_title {
+#tkbcpysmps .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2638,7 +2631,7 @@ impeach %&gt;%
   border-bottom-width: 0;
 }
 
-#gsssrfbwrv .gt_subtitle {
+#tkbcpysmps .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2648,13 +2641,13 @@ impeach %&gt;%
   border-top-width: 0;
 }
 
-#gsssrfbwrv .gt_bottom_border {
+#tkbcpysmps .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gsssrfbwrv .gt_col_headings {
+#tkbcpysmps .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2669,7 +2662,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#gsssrfbwrv .gt_col_heading {
+#tkbcpysmps .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2689,7 +2682,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#gsssrfbwrv .gt_column_spanner_outer {
+#tkbcpysmps .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2701,15 +2694,15 @@ impeach %&gt;%
   padding-right: 4px;
 }
 
-#gsssrfbwrv .gt_column_spanner_outer:first-child {
+#tkbcpysmps .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gsssrfbwrv .gt_column_spanner_outer:last-child {
+#tkbcpysmps .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gsssrfbwrv .gt_column_spanner {
+#tkbcpysmps .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2721,7 +2714,7 @@ impeach %&gt;%
   width: 100%;
 }
 
-#gsssrfbwrv .gt_group_heading {
+#tkbcpysmps .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2743,7 +2736,7 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#gsssrfbwrv .gt_empty_group_heading {
+#tkbcpysmps .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2758,15 +2751,15 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#gsssrfbwrv .gt_from_md > :first-child {
+#tkbcpysmps .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gsssrfbwrv .gt_from_md > :last-child {
+#tkbcpysmps .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gsssrfbwrv .gt_row {
+#tkbcpysmps .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2785,7 +2778,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#gsssrfbwrv .gt_stub {
+#tkbcpysmps .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2797,7 +2790,7 @@ impeach %&gt;%
   padding-left: 12px;
 }
 
-#gsssrfbwrv .gt_summary_row {
+#tkbcpysmps .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2807,7 +2800,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#gsssrfbwrv .gt_first_summary_row {
+#tkbcpysmps .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2817,7 +2810,7 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#gsssrfbwrv .gt_grand_summary_row {
+#tkbcpysmps .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2827,7 +2820,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#gsssrfbwrv .gt_first_grand_summary_row {
+#tkbcpysmps .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2837,11 +2830,11 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#gsssrfbwrv .gt_striped {
+#tkbcpysmps .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gsssrfbwrv .gt_table_body {
+#tkbcpysmps .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2850,7 +2843,7 @@ impeach %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#gsssrfbwrv .gt_footnotes {
+#tkbcpysmps .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2864,13 +2857,13 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#gsssrfbwrv .gt_footnote {
+#tkbcpysmps .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#gsssrfbwrv .gt_sourcenotes {
+#tkbcpysmps .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2884,46 +2877,46 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#gsssrfbwrv .gt_sourcenote {
+#tkbcpysmps .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#gsssrfbwrv .gt_left {
+#tkbcpysmps .gt_left {
   text-align: left;
 }
 
-#gsssrfbwrv .gt_center {
+#tkbcpysmps .gt_center {
   text-align: center;
 }
 
-#gsssrfbwrv .gt_right {
+#tkbcpysmps .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gsssrfbwrv .gt_font_normal {
+#tkbcpysmps .gt_font_normal {
   font-weight: normal;
 }
 
-#gsssrfbwrv .gt_font_bold {
+#tkbcpysmps .gt_font_bold {
   font-weight: bold;
 }
 
-#gsssrfbwrv .gt_font_italic {
+#tkbcpysmps .gt_font_italic {
   font-style: italic;
 }
 
-#gsssrfbwrv .gt_super {
+#tkbcpysmps .gt_super {
   font-size: 65%;
 }
 
-#gsssrfbwrv .gt_footnote_marks {
+#tkbcpysmps .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="gsssrfbwrv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="tkbcpysmps" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="32" class="gt_heading gt_title gt_font_normal" style>Members Against Impeachment, Come From a District that Trump won in 2016 and that Romney won in 2012</th>
@@ -3279,11 +3272,12 @@ impeach %&gt;%
   
   
 </table></div>
-<pre class="r"><code># 4) Filter for only results from September 2019 where a member is a YES for impeachment. 
-
-#Explanation: Filtering dataset where &quot;date_month&quot; is &quot;9&quot;, &quot;date_year&quot; is &quot;2019&quot;, and values under &quot;for_impeachment&quot; are &quot;YES&quot;. 
-
-impeach %&gt;%
+</div>
+<div id="members-for-impeachment-in-september-2019" class="section level3">
+<h3>Members For impeachment in September 2019</h3>
+<p>Filter for only results from September 2019 where a member is a YES for impeachment.</p>
+<p><em>Explanation</em>: Filtering dataset where “date_month” is “9”, “date_year” is “2019”, and values under “for_impeachment” are “YES”.</p>
+<pre class="r"><code>impeach %&gt;%
   filter(date_month == &quot;9&quot;,
          date_year == &quot;2019&quot;,
          for_impeachment  == &quot;YES&quot;) %&gt;%
@@ -3295,7 +3289,7 @@ impeach %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#urldamkbzn .gt_table {
+#doabslonhj .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -3320,7 +3314,7 @@ impeach %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#urldamkbzn .gt_heading {
+#doabslonhj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3332,7 +3326,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#urldamkbzn .gt_title {
+#doabslonhj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3342,7 +3336,7 @@ impeach %&gt;%
   border-bottom-width: 0;
 }
 
-#urldamkbzn .gt_subtitle {
+#doabslonhj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3352,13 +3346,13 @@ impeach %&gt;%
   border-top-width: 0;
 }
 
-#urldamkbzn .gt_bottom_border {
+#doabslonhj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#urldamkbzn .gt_col_headings {
+#doabslonhj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3373,7 +3367,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#urldamkbzn .gt_col_heading {
+#doabslonhj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3393,7 +3387,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#urldamkbzn .gt_column_spanner_outer {
+#doabslonhj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3405,15 +3399,15 @@ impeach %&gt;%
   padding-right: 4px;
 }
 
-#urldamkbzn .gt_column_spanner_outer:first-child {
+#doabslonhj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#urldamkbzn .gt_column_spanner_outer:last-child {
+#doabslonhj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#urldamkbzn .gt_column_spanner {
+#doabslonhj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3425,7 +3419,7 @@ impeach %&gt;%
   width: 100%;
 }
 
-#urldamkbzn .gt_group_heading {
+#doabslonhj .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3447,7 +3441,7 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#urldamkbzn .gt_empty_group_heading {
+#doabslonhj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3462,15 +3456,15 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#urldamkbzn .gt_from_md > :first-child {
+#doabslonhj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#urldamkbzn .gt_from_md > :last-child {
+#doabslonhj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#urldamkbzn .gt_row {
+#doabslonhj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3489,7 +3483,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#urldamkbzn .gt_stub {
+#doabslonhj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3501,7 +3495,7 @@ impeach %&gt;%
   padding-left: 12px;
 }
 
-#urldamkbzn .gt_summary_row {
+#doabslonhj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3511,7 +3505,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#urldamkbzn .gt_first_summary_row {
+#doabslonhj .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3521,7 +3515,7 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#urldamkbzn .gt_grand_summary_row {
+#doabslonhj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3531,7 +3525,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#urldamkbzn .gt_first_grand_summary_row {
+#doabslonhj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3541,11 +3535,11 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#urldamkbzn .gt_striped {
+#doabslonhj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#urldamkbzn .gt_table_body {
+#doabslonhj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3554,7 +3548,7 @@ impeach %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#urldamkbzn .gt_footnotes {
+#doabslonhj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3568,13 +3562,13 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#urldamkbzn .gt_footnote {
+#doabslonhj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#urldamkbzn .gt_sourcenotes {
+#doabslonhj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3588,46 +3582,46 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#urldamkbzn .gt_sourcenote {
+#doabslonhj .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#urldamkbzn .gt_left {
+#doabslonhj .gt_left {
   text-align: left;
 }
 
-#urldamkbzn .gt_center {
+#doabslonhj .gt_center {
   text-align: center;
 }
 
-#urldamkbzn .gt_right {
+#doabslonhj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#urldamkbzn .gt_font_normal {
+#doabslonhj .gt_font_normal {
   font-weight: normal;
 }
 
-#urldamkbzn .gt_font_bold {
+#doabslonhj .gt_font_bold {
   font-weight: bold;
 }
 
-#urldamkbzn .gt_font_italic {
+#doabslonhj .gt_font_italic {
   font-style: italic;
 }
 
-#urldamkbzn .gt_super {
+#doabslonhj .gt_super {
   font-size: 65%;
 }
 
-#urldamkbzn .gt_footnote_marks {
+#doabslonhj .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="urldamkbzn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="doabslonhj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="32" class="gt_heading gt_title gt_font_normal" style>Members For Impeachment in September 2019</th>
@@ -6261,12 +6255,12 @@ impeach %&gt;%
   
   
 </table></div>
-<pre class="r"><code># 5) Sort the entire dataframe based on the percentage of a district that has a 
-# bachelor&#39;s degree or higher (&quot;pct_bachelors&quot;), from lowest to highest
-
-#Explanation: Filtering the data set by arranging the values in the &quot;pct_bachelors&quot; by ascending order. 
-
-impeach %&gt;% 
+</div>
+<div id="house-democrats-organized-by-percentage-of-district-that-has-a-bachelors-degree-and-above" class="section level3">
+<h3>House Democrats organized by percentage of district that has a Bachelor’s Degree and above</h3>
+<p>Sort the entire dataframe based on the percentage of a district that has a bachelor’s degree or higher (“pct_bachelors”), from lowest to highest</p>
+<p><em>Explanation</em>: Filtering the data set by arranging the values in the “pct_bachelors” by ascending order.</p>
+<pre class="r"><code>impeach %&gt;% 
   arrange(pct_bachelors) %&gt;%
   gt() %&gt;%
   tab_header(
@@ -6276,7 +6270,7 @@ impeach %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ocgbueuuap .gt_table {
+#twstmhdiin .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -6301,7 +6295,7 @@ impeach %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#ocgbueuuap .gt_heading {
+#twstmhdiin .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -6313,7 +6307,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#ocgbueuuap .gt_title {
+#twstmhdiin .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -6323,7 +6317,7 @@ impeach %&gt;%
   border-bottom-width: 0;
 }
 
-#ocgbueuuap .gt_subtitle {
+#twstmhdiin .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -6333,13 +6327,13 @@ impeach %&gt;%
   border-top-width: 0;
 }
 
-#ocgbueuuap .gt_bottom_border {
+#twstmhdiin .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ocgbueuuap .gt_col_headings {
+#twstmhdiin .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -6354,7 +6348,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#ocgbueuuap .gt_col_heading {
+#twstmhdiin .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6374,7 +6368,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#ocgbueuuap .gt_column_spanner_outer {
+#twstmhdiin .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6386,15 +6380,15 @@ impeach %&gt;%
   padding-right: 4px;
 }
 
-#ocgbueuuap .gt_column_spanner_outer:first-child {
+#twstmhdiin .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ocgbueuuap .gt_column_spanner_outer:last-child {
+#twstmhdiin .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ocgbueuuap .gt_column_spanner {
+#twstmhdiin .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -6406,7 +6400,7 @@ impeach %&gt;%
   width: 100%;
 }
 
-#ocgbueuuap .gt_group_heading {
+#twstmhdiin .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -6428,7 +6422,7 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#ocgbueuuap .gt_empty_group_heading {
+#twstmhdiin .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -6443,15 +6437,15 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#ocgbueuuap .gt_from_md > :first-child {
+#twstmhdiin .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ocgbueuuap .gt_from_md > :last-child {
+#twstmhdiin .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ocgbueuuap .gt_row {
+#twstmhdiin .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6470,7 +6464,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#ocgbueuuap .gt_stub {
+#twstmhdiin .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -6482,7 +6476,7 @@ impeach %&gt;%
   padding-left: 12px;
 }
 
-#ocgbueuuap .gt_summary_row {
+#twstmhdiin .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -6492,7 +6486,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#ocgbueuuap .gt_first_summary_row {
+#twstmhdiin .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6502,7 +6496,7 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#ocgbueuuap .gt_grand_summary_row {
+#twstmhdiin .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -6512,7 +6506,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#ocgbueuuap .gt_first_grand_summary_row {
+#twstmhdiin .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -6522,11 +6516,11 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#ocgbueuuap .gt_striped {
+#twstmhdiin .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ocgbueuuap .gt_table_body {
+#twstmhdiin .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -6535,7 +6529,7 @@ impeach %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#ocgbueuuap .gt_footnotes {
+#twstmhdiin .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -6549,13 +6543,13 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#ocgbueuuap .gt_footnote {
+#twstmhdiin .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#ocgbueuuap .gt_sourcenotes {
+#twstmhdiin .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -6569,46 +6563,46 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#ocgbueuuap .gt_sourcenote {
+#twstmhdiin .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#ocgbueuuap .gt_left {
+#twstmhdiin .gt_left {
   text-align: left;
 }
 
-#ocgbueuuap .gt_center {
+#twstmhdiin .gt_center {
   text-align: center;
 }
 
-#ocgbueuuap .gt_right {
+#twstmhdiin .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ocgbueuuap .gt_font_normal {
+#twstmhdiin .gt_font_normal {
   font-weight: normal;
 }
 
-#ocgbueuuap .gt_font_bold {
+#twstmhdiin .gt_font_bold {
   font-weight: bold;
 }
 
-#ocgbueuuap .gt_font_italic {
+#twstmhdiin .gt_font_italic {
   font-style: italic;
 }
 
-#ocgbueuuap .gt_super {
+#twstmhdiin .gt_super {
   font-size: 65%;
 }
 
-#ocgbueuuap .gt_footnote_marks {
+#twstmhdiin .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="ocgbueuuap" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="twstmhdiin" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="32" class="gt_heading gt_title gt_font_normal" style>House Democrats Organized by Percentage of District that has a Bachelor's Degree+</th>
@@ -14648,13 +14642,12 @@ impeach %&gt;%
   
   
 </table></div>
-<pre class="r"><code># 6) Sort the just those who are NO on impeachment based on the percentage of a district that has a 
-# bachelor&#39;s degree or higher (&quot;pct_bachelors&quot;), from lowest to highest
-
-#Explanation: First, I arranged the values in the dataset from ascending order by &quot;pct_bachelors&quot;.
-#Then, I filtered that to return only those who are against impeachment. 
-
-impeach %&gt;%
+</div>
+<div id="members-against-impeachment-based-on-percentage-of-district-that-has-bachelors-degree-and-above" class="section level3">
+<h3>Members against impeachment based on percentage of district that has Bachelor’s Degree and above</h3>
+<p>Sort the just those who are NO on impeachment based on the percentage of a district that has a bachelor’s degree or higher (“pct_bachelors”), from lowest to highest</p>
+<p><em>Explanation</em>: First, I arranged the values in the dataset from ascending order by “pct_bachelors”. Then, I filtered that to return only those who are against impeachment.</p>
+<pre class="r"><code>impeach %&gt;%
   arrange(pct_bachelors) %&gt;%
   filter(for_impeachment == &quot;NO&quot;) %&gt;%
   gt() %&gt;%
@@ -14665,7 +14658,7 @@ impeach %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#zticbrukpy .gt_table {
+#nvrqjxdmqm .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -14690,7 +14683,7 @@ impeach %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#zticbrukpy .gt_heading {
+#nvrqjxdmqm .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -14702,7 +14695,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#zticbrukpy .gt_title {
+#nvrqjxdmqm .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -14712,7 +14705,7 @@ impeach %&gt;%
   border-bottom-width: 0;
 }
 
-#zticbrukpy .gt_subtitle {
+#nvrqjxdmqm .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -14722,13 +14715,13 @@ impeach %&gt;%
   border-top-width: 0;
 }
 
-#zticbrukpy .gt_bottom_border {
+#nvrqjxdmqm .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zticbrukpy .gt_col_headings {
+#nvrqjxdmqm .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -14743,7 +14736,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#zticbrukpy .gt_col_heading {
+#nvrqjxdmqm .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -14763,7 +14756,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#zticbrukpy .gt_column_spanner_outer {
+#nvrqjxdmqm .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -14775,15 +14768,15 @@ impeach %&gt;%
   padding-right: 4px;
 }
 
-#zticbrukpy .gt_column_spanner_outer:first-child {
+#nvrqjxdmqm .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zticbrukpy .gt_column_spanner_outer:last-child {
+#nvrqjxdmqm .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zticbrukpy .gt_column_spanner {
+#nvrqjxdmqm .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -14795,7 +14788,7 @@ impeach %&gt;%
   width: 100%;
 }
 
-#zticbrukpy .gt_group_heading {
+#nvrqjxdmqm .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -14817,7 +14810,7 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#zticbrukpy .gt_empty_group_heading {
+#nvrqjxdmqm .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -14832,15 +14825,15 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#zticbrukpy .gt_from_md > :first-child {
+#nvrqjxdmqm .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zticbrukpy .gt_from_md > :last-child {
+#nvrqjxdmqm .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zticbrukpy .gt_row {
+#nvrqjxdmqm .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -14859,7 +14852,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#zticbrukpy .gt_stub {
+#nvrqjxdmqm .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -14871,7 +14864,7 @@ impeach %&gt;%
   padding-left: 12px;
 }
 
-#zticbrukpy .gt_summary_row {
+#nvrqjxdmqm .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -14881,7 +14874,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#zticbrukpy .gt_first_summary_row {
+#nvrqjxdmqm .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -14891,7 +14884,7 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#zticbrukpy .gt_grand_summary_row {
+#nvrqjxdmqm .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -14901,7 +14894,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#zticbrukpy .gt_first_grand_summary_row {
+#nvrqjxdmqm .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -14911,11 +14904,11 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#zticbrukpy .gt_striped {
+#nvrqjxdmqm .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zticbrukpy .gt_table_body {
+#nvrqjxdmqm .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -14924,7 +14917,7 @@ impeach %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#zticbrukpy .gt_footnotes {
+#nvrqjxdmqm .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -14938,13 +14931,13 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#zticbrukpy .gt_footnote {
+#nvrqjxdmqm .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#zticbrukpy .gt_sourcenotes {
+#nvrqjxdmqm .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -14958,46 +14951,46 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#zticbrukpy .gt_sourcenote {
+#nvrqjxdmqm .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#zticbrukpy .gt_left {
+#nvrqjxdmqm .gt_left {
   text-align: left;
 }
 
-#zticbrukpy .gt_center {
+#nvrqjxdmqm .gt_center {
   text-align: center;
 }
 
-#zticbrukpy .gt_right {
+#nvrqjxdmqm .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zticbrukpy .gt_font_normal {
+#nvrqjxdmqm .gt_font_normal {
   font-weight: normal;
 }
 
-#zticbrukpy .gt_font_bold {
+#nvrqjxdmqm .gt_font_bold {
   font-weight: bold;
 }
 
-#zticbrukpy .gt_font_italic {
+#nvrqjxdmqm .gt_font_italic {
   font-style: italic;
 }
 
-#zticbrukpy .gt_super {
+#nvrqjxdmqm .gt_super {
   font-size: 65%;
 }
 
-#zticbrukpy .gt_footnote_marks {
+#nvrqjxdmqm .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="zticbrukpy" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="nvrqjxdmqm" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="32" class="gt_heading gt_title gt_font_normal" style>Members Against Impeachment based on Percentage of District that has Bachelor's Degree+</th>
@@ -15931,16 +15924,13 @@ impeach %&gt;%
   
   
 </table></div>
-<pre class="r"><code># 7) Sort the just those who are NO on impeachment based on the percentage of a district that has a 
-# bachelor&#39;s degree or higher (&quot;pct_bachelors&quot;), from lowest to highest.
-
-# Then filter those records by only those whose bachelor&#39;s percentage is below the national average (found
-# in the &quot;pct_bachelors_compared_to_national&quot; column).
-
-#Explanation: I first arranged the dataset in ascending order by  pct_bachelors. 
-#Then, I filtered those results by those who voted NO on impeachment and also those who have &quot;BELOW&quot; in the &quot;pct_bachelors_compared_to_national&quot; column.
-
-impeach %&gt;%
+</div>
+<div id="members-against-impeachment-based-on-percetage-of-district-that-has-bachelors-degree-and-above-and-percent-bachelors-compared-to-national-average" class="section level3">
+<h3>Members against impeachment based on percetage of district that has Bachelor’s Degree and above and percent Bachelor’s compared to national average</h3>
+<p>Sort the just those who are NO on impeachment based on the percentage of a district that has a bachelor’s degree or higher (“pct_bachelors”), from lowest to highest.</p>
+<p>Then filter those records by only those whose bachelor’s percentage is below the national average (found in the “pct_bachelors_compared_to_national” column).</p>
+<p><em>Explanation</em>: I first arranged the dataset in ascending order by pct_bachelors. Then, I filtered those results by those who voted NO on impeachment and also those who have “BELOW” in the “pct_bachelors_compared_to_national” column.</p>
+<pre class="r"><code>impeach %&gt;%
   arrange(pct_bachelors) %&gt;%
   filter(for_impeachment == &quot;NO&quot; &amp; pct_bachelors_compared_to_national == &quot;BELOW&quot;) %&gt;%
   gt() %&gt;%
@@ -15951,7 +15941,7 @@ impeach %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#julknytsnf .gt_table {
+#wwegzcjulk .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -15976,7 +15966,7 @@ impeach %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#julknytsnf .gt_heading {
+#wwegzcjulk .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -15988,7 +15978,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#julknytsnf .gt_title {
+#wwegzcjulk .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -15998,7 +15988,7 @@ impeach %&gt;%
   border-bottom-width: 0;
 }
 
-#julknytsnf .gt_subtitle {
+#wwegzcjulk .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -16008,13 +15998,13 @@ impeach %&gt;%
   border-top-width: 0;
 }
 
-#julknytsnf .gt_bottom_border {
+#wwegzcjulk .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#julknytsnf .gt_col_headings {
+#wwegzcjulk .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -16029,7 +16019,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#julknytsnf .gt_col_heading {
+#wwegzcjulk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -16049,7 +16039,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#julknytsnf .gt_column_spanner_outer {
+#wwegzcjulk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -16061,15 +16051,15 @@ impeach %&gt;%
   padding-right: 4px;
 }
 
-#julknytsnf .gt_column_spanner_outer:first-child {
+#wwegzcjulk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#julknytsnf .gt_column_spanner_outer:last-child {
+#wwegzcjulk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#julknytsnf .gt_column_spanner {
+#wwegzcjulk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -16081,7 +16071,7 @@ impeach %&gt;%
   width: 100%;
 }
 
-#julknytsnf .gt_group_heading {
+#wwegzcjulk .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -16103,7 +16093,7 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#julknytsnf .gt_empty_group_heading {
+#wwegzcjulk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -16118,15 +16108,15 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#julknytsnf .gt_from_md > :first-child {
+#wwegzcjulk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#julknytsnf .gt_from_md > :last-child {
+#wwegzcjulk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#julknytsnf .gt_row {
+#wwegzcjulk .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -16145,7 +16135,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#julknytsnf .gt_stub {
+#wwegzcjulk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -16157,7 +16147,7 @@ impeach %&gt;%
   padding-left: 12px;
 }
 
-#julknytsnf .gt_summary_row {
+#wwegzcjulk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -16167,7 +16157,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#julknytsnf .gt_first_summary_row {
+#wwegzcjulk .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -16177,7 +16167,7 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#julknytsnf .gt_grand_summary_row {
+#wwegzcjulk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -16187,7 +16177,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#julknytsnf .gt_first_grand_summary_row {
+#wwegzcjulk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -16197,11 +16187,11 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#julknytsnf .gt_striped {
+#wwegzcjulk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#julknytsnf .gt_table_body {
+#wwegzcjulk .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -16210,7 +16200,7 @@ impeach %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#julknytsnf .gt_footnotes {
+#wwegzcjulk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -16224,13 +16214,13 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#julknytsnf .gt_footnote {
+#wwegzcjulk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#julknytsnf .gt_sourcenotes {
+#wwegzcjulk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -16244,46 +16234,46 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#julknytsnf .gt_sourcenote {
+#wwegzcjulk .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#julknytsnf .gt_left {
+#wwegzcjulk .gt_left {
   text-align: left;
 }
 
-#julknytsnf .gt_center {
+#wwegzcjulk .gt_center {
   text-align: center;
 }
 
-#julknytsnf .gt_right {
+#wwegzcjulk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#julknytsnf .gt_font_normal {
+#wwegzcjulk .gt_font_normal {
   font-weight: normal;
 }
 
-#julknytsnf .gt_font_bold {
+#wwegzcjulk .gt_font_bold {
   font-weight: bold;
 }
 
-#julknytsnf .gt_font_italic {
+#wwegzcjulk .gt_font_italic {
   font-style: italic;
 }
 
-#julknytsnf .gt_super {
+#wwegzcjulk .gt_super {
   font-size: 65%;
 }
 
-#julknytsnf .gt_footnote_marks {
+#wwegzcjulk .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="julknytsnf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="wwegzcjulk" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="32" class="gt_heading gt_title gt_font_normal" style>Members Against Impeachment Based on Percentage of District that has Bachelor's Degree+ and Percent Bachelor's Compared to National Average</th>
@@ -16979,11 +16969,10 @@ impeach %&gt;%
   
   
 </table></div>
-<pre class="r"><code># 8) Filter for only members from New Jersey who are NO on impeachment
-
-#Explanation: I filtered the dataset where state was &quot;NJ&quot; and where the value in for_impeachment was &quot;NO&quot;.
-
-impeach %&gt;%
+<p>###NJ Members against impeachment</p>
+<p>Filter for only members from New Jersey who are NO on impeachment</p>
+<p><em>Explanation</em>: I filtered the dataset where state was “NJ” and where the value in for_impeachment was “NO”.</p>
+<pre class="r"><code>impeach %&gt;%
   filter(state== &quot;NJ&quot; &amp; for_impeachment == &quot;NO&quot;) %&gt;%
   gt() %&gt;%
   tab_header(
@@ -16993,7 +16982,7 @@ impeach %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#lrqkenpytp .gt_table {
+#qfyjfizuhc .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -17018,7 +17007,7 @@ impeach %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#lrqkenpytp .gt_heading {
+#qfyjfizuhc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -17030,7 +17019,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lrqkenpytp .gt_title {
+#qfyjfizuhc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -17040,7 +17029,7 @@ impeach %&gt;%
   border-bottom-width: 0;
 }
 
-#lrqkenpytp .gt_subtitle {
+#qfyjfizuhc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -17050,13 +17039,13 @@ impeach %&gt;%
   border-top-width: 0;
 }
 
-#lrqkenpytp .gt_bottom_border {
+#qfyjfizuhc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lrqkenpytp .gt_col_headings {
+#qfyjfizuhc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -17071,7 +17060,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lrqkenpytp .gt_col_heading {
+#qfyjfizuhc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -17091,7 +17080,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#lrqkenpytp .gt_column_spanner_outer {
+#qfyjfizuhc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -17103,15 +17092,15 @@ impeach %&gt;%
   padding-right: 4px;
 }
 
-#lrqkenpytp .gt_column_spanner_outer:first-child {
+#qfyjfizuhc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lrqkenpytp .gt_column_spanner_outer:last-child {
+#qfyjfizuhc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lrqkenpytp .gt_column_spanner {
+#qfyjfizuhc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -17123,7 +17112,7 @@ impeach %&gt;%
   width: 100%;
 }
 
-#lrqkenpytp .gt_group_heading {
+#qfyjfizuhc .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -17145,7 +17134,7 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#lrqkenpytp .gt_empty_group_heading {
+#qfyjfizuhc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -17160,15 +17149,15 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#lrqkenpytp .gt_from_md > :first-child {
+#qfyjfizuhc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lrqkenpytp .gt_from_md > :last-child {
+#qfyjfizuhc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lrqkenpytp .gt_row {
+#qfyjfizuhc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -17187,7 +17176,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#lrqkenpytp .gt_stub {
+#qfyjfizuhc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -17199,7 +17188,7 @@ impeach %&gt;%
   padding-left: 12px;
 }
 
-#lrqkenpytp .gt_summary_row {
+#qfyjfizuhc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -17209,7 +17198,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#lrqkenpytp .gt_first_summary_row {
+#qfyjfizuhc .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -17219,7 +17208,7 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#lrqkenpytp .gt_grand_summary_row {
+#qfyjfizuhc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -17229,7 +17218,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#lrqkenpytp .gt_first_grand_summary_row {
+#qfyjfizuhc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -17239,11 +17228,11 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#lrqkenpytp .gt_striped {
+#qfyjfizuhc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lrqkenpytp .gt_table_body {
+#qfyjfizuhc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -17252,7 +17241,7 @@ impeach %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#lrqkenpytp .gt_footnotes {
+#qfyjfizuhc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -17266,13 +17255,13 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lrqkenpytp .gt_footnote {
+#qfyjfizuhc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#lrqkenpytp .gt_sourcenotes {
+#qfyjfizuhc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -17286,46 +17275,46 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lrqkenpytp .gt_sourcenote {
+#qfyjfizuhc .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#lrqkenpytp .gt_left {
+#qfyjfizuhc .gt_left {
   text-align: left;
 }
 
-#lrqkenpytp .gt_center {
+#qfyjfizuhc .gt_center {
   text-align: center;
 }
 
-#lrqkenpytp .gt_right {
+#qfyjfizuhc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lrqkenpytp .gt_font_normal {
+#qfyjfizuhc .gt_font_normal {
   font-weight: normal;
 }
 
-#lrqkenpytp .gt_font_bold {
+#qfyjfizuhc .gt_font_bold {
   font-weight: bold;
 }
 
-#lrqkenpytp .gt_font_italic {
+#qfyjfizuhc .gt_font_italic {
   font-style: italic;
 }
 
-#lrqkenpytp .gt_super {
+#qfyjfizuhc .gt_super {
   font-size: 65%;
 }
 
-#lrqkenpytp .gt_footnote_marks {
+#qfyjfizuhc .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="lrqkenpytp" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="qfyjfizuhc" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="32" class="gt_heading gt_title gt_font_normal" style>NJ Members Against Impeachment</th>
@@ -17409,14 +17398,12 @@ impeach %&gt;%
   
   
 </table></div>
-<pre class="r"><code># 9) Filter for those who were YES on impeachment, with a declared date prior to 2019. So only
-# those with dates before 2019.  Then sort those so that the highest Clinton vote percentages are 
-# at the top.   
-
-#Explanation: First, I arranged the dataset in descending order based on the clinton_percent variable. 
-#Then, I filtered those results where the year was less than 2019 (aka happened before 2019) and where they voted YES on impeachment.  
-
-impeach %&gt;%
+</div>
+<div id="members-for-impeachment-with-a-declared-date-prior-to-2019" class="section level3">
+<h3>Members for impeachment with a declared date prior to 2019</h3>
+<p>Filter for those who were YES on impeachment, with a declared date prior to 2019. So only those with dates before 2019. Then sort those so that the highest Clinton vote percentages are at the top.</p>
+<p><em>Explanation</em>: First, I arranged the dataset in descending order based on the clinton_percent variable. Then, I filtered those results where the year was less than 2019 (aka happened before 2019) and where they voted YES on impeachment.</p>
+<pre class="r"><code>impeach %&gt;%
   arrange(desc(clinton_percent)) %&gt;%
   filter(date_year &lt; &quot;2019&quot;,
          for_impeachment  == &quot;YES&quot;)  %&gt;%
@@ -17428,7 +17415,7 @@ impeach %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#zzxtkgywpg .gt_table {
+#bdlzmlphzr .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -17453,7 +17440,7 @@ impeach %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#zzxtkgywpg .gt_heading {
+#bdlzmlphzr .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -17465,7 +17452,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#zzxtkgywpg .gt_title {
+#bdlzmlphzr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -17475,7 +17462,7 @@ impeach %&gt;%
   border-bottom-width: 0;
 }
 
-#zzxtkgywpg .gt_subtitle {
+#bdlzmlphzr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -17485,13 +17472,13 @@ impeach %&gt;%
   border-top-width: 0;
 }
 
-#zzxtkgywpg .gt_bottom_border {
+#bdlzmlphzr .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zzxtkgywpg .gt_col_headings {
+#bdlzmlphzr .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -17506,7 +17493,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#zzxtkgywpg .gt_col_heading {
+#bdlzmlphzr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -17526,7 +17513,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#zzxtkgywpg .gt_column_spanner_outer {
+#bdlzmlphzr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -17538,15 +17525,15 @@ impeach %&gt;%
   padding-right: 4px;
 }
 
-#zzxtkgywpg .gt_column_spanner_outer:first-child {
+#bdlzmlphzr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zzxtkgywpg .gt_column_spanner_outer:last-child {
+#bdlzmlphzr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zzxtkgywpg .gt_column_spanner {
+#bdlzmlphzr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -17558,7 +17545,7 @@ impeach %&gt;%
   width: 100%;
 }
 
-#zzxtkgywpg .gt_group_heading {
+#bdlzmlphzr .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -17580,7 +17567,7 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#zzxtkgywpg .gt_empty_group_heading {
+#bdlzmlphzr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -17595,15 +17582,15 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#zzxtkgywpg .gt_from_md > :first-child {
+#bdlzmlphzr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zzxtkgywpg .gt_from_md > :last-child {
+#bdlzmlphzr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zzxtkgywpg .gt_row {
+#bdlzmlphzr .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -17622,7 +17609,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#zzxtkgywpg .gt_stub {
+#bdlzmlphzr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -17634,7 +17621,7 @@ impeach %&gt;%
   padding-left: 12px;
 }
 
-#zzxtkgywpg .gt_summary_row {
+#bdlzmlphzr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -17644,7 +17631,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#zzxtkgywpg .gt_first_summary_row {
+#bdlzmlphzr .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -17654,7 +17641,7 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#zzxtkgywpg .gt_grand_summary_row {
+#bdlzmlphzr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -17664,7 +17651,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#zzxtkgywpg .gt_first_grand_summary_row {
+#bdlzmlphzr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -17674,11 +17661,11 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#zzxtkgywpg .gt_striped {
+#bdlzmlphzr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zzxtkgywpg .gt_table_body {
+#bdlzmlphzr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -17687,7 +17674,7 @@ impeach %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#zzxtkgywpg .gt_footnotes {
+#bdlzmlphzr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -17701,13 +17688,13 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#zzxtkgywpg .gt_footnote {
+#bdlzmlphzr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#zzxtkgywpg .gt_sourcenotes {
+#bdlzmlphzr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -17721,46 +17708,46 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#zzxtkgywpg .gt_sourcenote {
+#bdlzmlphzr .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#zzxtkgywpg .gt_left {
+#bdlzmlphzr .gt_left {
   text-align: left;
 }
 
-#zzxtkgywpg .gt_center {
+#bdlzmlphzr .gt_center {
   text-align: center;
 }
 
-#zzxtkgywpg .gt_right {
+#bdlzmlphzr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zzxtkgywpg .gt_font_normal {
+#bdlzmlphzr .gt_font_normal {
   font-weight: normal;
 }
 
-#zzxtkgywpg .gt_font_bold {
+#bdlzmlphzr .gt_font_bold {
   font-weight: bold;
 }
 
-#zzxtkgywpg .gt_font_italic {
+#bdlzmlphzr .gt_font_italic {
   font-style: italic;
 }
 
-#zzxtkgywpg .gt_super {
+#bdlzmlphzr .gt_super {
   font-size: 65%;
 }
 
-#zzxtkgywpg .gt_footnote_marks {
+#bdlzmlphzr .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="zzxtkgywpg" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="bdlzmlphzr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="32" class="gt_heading gt_title gt_font_normal" style>Members For Impeachment with a Declared Date Prior to 2019</th>
@@ -18150,16 +18137,13 @@ impeach %&gt;%
   
   
 </table></div>
-<pre class="r"><code># 10) Answer this question with a single numeric answer, and show the R code you
-# used to reach that answer: How many members in the dataset who are holdouts on impeachment
-# comes from districts with a GDP below the national figure?
-
-#19 
-
-#Explanation: I filtered the dataset by those who oppose impeachment and who have the value &quot;BELOW&quot; in the &quot;gdp_above_national&quot; column. 
-#This returned a table with 19 rows. 
-
-impeach %&gt;% 
+</div>
+<div id="members-against-impeachment-and-who-come-from-a-district-with-a-gdp-below-national-figure" class="section level3">
+<h3>Members against impeachment and who come from a district with a GDP below national figure</h3>
+<p>Answer this question with a single numeric answer, and show the R code you used to reach that answer: How many members in the dataset who are holdouts on impeachment comes from districts with a GDP below the national figure?</p>
+<p>19</p>
+<p><em>Explanation</em>: I filtered the dataset by those who oppose impeachment and who have the value “BELOW” in the “gdp_above_national” column. This returned a table with 19 rows.</p>
+<pre class="r"><code>impeach %&gt;% 
   filter(for_impeachment == &quot;NO&quot;,
          gdp_above_national == &quot;BELOW&quot;)  %&gt;%
   gt() %&gt;%
@@ -18170,7 +18154,7 @@ impeach %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#yyteposzke .gt_table {
+#ywgqydxxpj .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -18195,7 +18179,7 @@ impeach %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#yyteposzke .gt_heading {
+#ywgqydxxpj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -18207,7 +18191,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#yyteposzke .gt_title {
+#ywgqydxxpj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -18217,7 +18201,7 @@ impeach %&gt;%
   border-bottom-width: 0;
 }
 
-#yyteposzke .gt_subtitle {
+#ywgqydxxpj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -18227,13 +18211,13 @@ impeach %&gt;%
   border-top-width: 0;
 }
 
-#yyteposzke .gt_bottom_border {
+#ywgqydxxpj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yyteposzke .gt_col_headings {
+#ywgqydxxpj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -18248,7 +18232,7 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#yyteposzke .gt_col_heading {
+#ywgqydxxpj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -18268,7 +18252,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#yyteposzke .gt_column_spanner_outer {
+#ywgqydxxpj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -18280,15 +18264,15 @@ impeach %&gt;%
   padding-right: 4px;
 }
 
-#yyteposzke .gt_column_spanner_outer:first-child {
+#ywgqydxxpj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yyteposzke .gt_column_spanner_outer:last-child {
+#ywgqydxxpj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yyteposzke .gt_column_spanner {
+#ywgqydxxpj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -18300,7 +18284,7 @@ impeach %&gt;%
   width: 100%;
 }
 
-#yyteposzke .gt_group_heading {
+#ywgqydxxpj .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -18322,7 +18306,7 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#yyteposzke .gt_empty_group_heading {
+#ywgqydxxpj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -18337,15 +18321,15 @@ impeach %&gt;%
   vertical-align: middle;
 }
 
-#yyteposzke .gt_from_md > :first-child {
+#ywgqydxxpj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yyteposzke .gt_from_md > :last-child {
+#ywgqydxxpj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yyteposzke .gt_row {
+#ywgqydxxpj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -18364,7 +18348,7 @@ impeach %&gt;%
   overflow-x: hidden;
 }
 
-#yyteposzke .gt_stub {
+#ywgqydxxpj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -18376,7 +18360,7 @@ impeach %&gt;%
   padding-left: 12px;
 }
 
-#yyteposzke .gt_summary_row {
+#ywgqydxxpj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -18386,7 +18370,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#yyteposzke .gt_first_summary_row {
+#ywgqydxxpj .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -18396,7 +18380,7 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#yyteposzke .gt_grand_summary_row {
+#ywgqydxxpj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -18406,7 +18390,7 @@ impeach %&gt;%
   padding-right: 5px;
 }
 
-#yyteposzke .gt_first_grand_summary_row {
+#ywgqydxxpj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -18416,11 +18400,11 @@ impeach %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#yyteposzke .gt_striped {
+#ywgqydxxpj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yyteposzke .gt_table_body {
+#ywgqydxxpj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -18429,7 +18413,7 @@ impeach %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#yyteposzke .gt_footnotes {
+#ywgqydxxpj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -18443,13 +18427,13 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#yyteposzke .gt_footnote {
+#ywgqydxxpj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#yyteposzke .gt_sourcenotes {
+#ywgqydxxpj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -18463,46 +18447,46 @@ impeach %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#yyteposzke .gt_sourcenote {
+#ywgqydxxpj .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#yyteposzke .gt_left {
+#ywgqydxxpj .gt_left {
   text-align: left;
 }
 
-#yyteposzke .gt_center {
+#ywgqydxxpj .gt_center {
   text-align: center;
 }
 
-#yyteposzke .gt_right {
+#ywgqydxxpj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yyteposzke .gt_font_normal {
+#ywgqydxxpj .gt_font_normal {
   font-weight: normal;
 }
 
-#yyteposzke .gt_font_bold {
+#ywgqydxxpj .gt_font_bold {
   font-weight: bold;
 }
 
-#yyteposzke .gt_font_italic {
+#ywgqydxxpj .gt_font_italic {
   font-style: italic;
 }
 
-#yyteposzke .gt_super {
+#ywgqydxxpj .gt_super {
   font-size: 65%;
 }
 
-#yyteposzke .gt_footnote_marks {
+#ywgqydxxpj .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="yyteposzke" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="ywgqydxxpj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="32" class="gt_heading gt_title gt_font_normal" style>Members Against Impeachment and Who Come From a District with a GDP Below National Figure</th>
@@ -19198,6 +19182,7 @@ impeach %&gt;%
   
   
 </table></div>
+</div>
 
 
 
